@@ -1,4 +1,4 @@
-package com.def.solid;
+package edu.def.solid;
 
 public class Solid {
 

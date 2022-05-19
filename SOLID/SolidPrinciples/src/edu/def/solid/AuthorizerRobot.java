@@ -1,4 +1,4 @@
-package com.def.solid;
+package edu.def.solid;
 
 public class AuthorizerRobot implements Authorizer {
     private boolean authorized = false;

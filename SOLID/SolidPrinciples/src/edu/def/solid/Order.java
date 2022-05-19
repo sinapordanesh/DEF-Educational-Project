@@ -1,4 +1,4 @@
-package com.def.solid;
+package edu.def.solid;
 
 public class Order {
     private String[] items;
@@ -26,5 +26,13 @@ public class Order {
             total += this.quantities[i] * this.prices[i];
         }
         return total;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
     }
 }

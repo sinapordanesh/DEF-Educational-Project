@@ -1,10 +1,10 @@
-package com.def.solid;
+package edu.def.solid;
 
-public class AuthorizerSMS implements Authorizer{
+public class AuthorizerGoogle implements Authorizer {
     private boolean authorized = false;
 
     public void verifyCode(int code){
-        System.out.print("Verifying SMS code " + code);
+        System.out.print("Verifying Google code " + code);
         this.authorized = true;
     }
 
@@ -12,5 +12,4 @@ public class AuthorizerSMS implements Authorizer{
     public boolean isAuthorized() {
         return this.authorized;
     }
-
 }
