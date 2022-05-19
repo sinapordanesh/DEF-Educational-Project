@@ -3,7 +3,7 @@ package edu.def.solid;
 public class AuthorizerRobot implements Authorizer {
     private boolean authorized = false;
 
-    public void verifyCode(int code){
+    public void notARobot(){
         this.authorized = true;
     }
 
