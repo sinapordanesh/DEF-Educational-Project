@@ -19,11 +19,25 @@ public class VehicleRegistry {
         this.addVehicleInfo("Tesla Model Y", true, 75000);
     }
 
-    public  void addVehicleInfo(String brand, boolean electric, int cataloguePrice){
+    public void addVehicleInfo(String brand, boolean electric, int cataloguePrice){
         /*create an entry for the HashMap which the Key is String type and the Vale is a
         non-primary data type VehicleInfo
          */
         this.vehicleInfo.put(brand, new VehicleInfo(brand, electric, cataloguePrice));
+    }
+
+    public String generateVehicleId(int length){
+        return getSaltString("uppercase", length);
+    }
+
+    public String generateVehicleLicense(String id){
+        return id.substring(0, 2) + "-" + getSaltString("digits", 2) + "-" + getSaltString("uppercase", 2);
+    }
+
+    public Vehicle createVehicle(String brand){
+        String id = generateVehicleId(12);
+        String licensePlate = generateVehicleLicense(id);
+        return new Vehicle(id, licensePlate, vehicleInfo.get(brand));
     }
 
     /**
@@ -41,10 +55,13 @@ public class VehicleRegistry {
         switch (ascii){
             case "uppercase":
                 SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                break;
             case "lowercase":
                 SALTCHARS = "abcdefghijklmnopqrstuvwxyz";
+                break;
             case "digits":
                 SALTCHARS = "1234567890";
+                break;
             default:
                 SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
         }
