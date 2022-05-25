@@ -1,5 +1,7 @@
 ﻿# [Cohesion and Coupling](https://www.youtube.com/watch?v=eiDyK_ofPPM) **principles code translation in Java**
 
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
+
 ## **Introduction** 
 
 - **Cohesion** is used to indicate the degree to which a class has a single, well-focused purpose. **Coupling** is all about how classes interact with each other; on the other hand, cohesion focuses on how the single class is designed. Higher the cohesiveness of the class, the better is the OO design.

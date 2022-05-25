@@ -1,4 +1,7 @@
 ﻿# **[SOLID principles](https://www.youtube.com/watch?v=pTB30aXS77U&feature=youtu.be) code translation in Java** 
+
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
+
 ## **Introduction** 
 - SOLID is an acronym for the first five object-oriented design (OOD) principles.
 These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows. Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
