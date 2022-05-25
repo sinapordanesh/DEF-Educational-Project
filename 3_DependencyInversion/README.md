@@ -1,6 +1,8 @@
 ﻿
 # [Dependency Inversion](https://www.youtube.com/watch?v=Kv5jhbSkqLE) **principles code translation in Java** 
 
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
+
 ## **General Introduction** 
 
 - This topic discusses how we can implement some object-oriented definitions like [Abstraction](https://en.wikipedia.org/wiki/Abstraction_\(computer_science\)) or [Interfaces](https://en.wikipedia.org/wiki/Interface_\(computing\)) in a language like a python which doesn’t have these definitions locally. 
