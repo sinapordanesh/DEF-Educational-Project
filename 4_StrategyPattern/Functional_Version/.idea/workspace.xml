@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8793cf9-18ed-4977-b811-f866798db3ba" name="Changes" comment="" />
+    <list default="true" id="a8793cf9-18ed-4977-b811-f866798db3ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functional_Version.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/def/sp/CustomerSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/def/sp/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/def/sp/SupportTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/4_StrategyPattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/BlackHoleStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/CustomerSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/FIFOOrderingStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/FILOOrderingStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/RandomOrderingStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/SupportTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/out/production/4_StrategyPattern/edu/def/sp/TicketOrderingStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/BlackHoleStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/CustomerSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/FIFOOrderingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/FILOOrderingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/RandomOrderingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/SupportTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_Version/src/edu/def/sp/TicketOrderingStrategy.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="29iu2MxgML4sMbCrP9Ljfa8e8Ih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -16,9 +52,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sinap/OneDrive - University of Calgary/Documents/Programing/Work Projects/Digital Engineering Fellowship/Saman-Pordanesh/4_StrategyPattern"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Functional_Version" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Functional_Version" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -27,7 +79,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653608019102</updated>
+      <workItem from="1653608020732" duration="631000" />
+      <workItem from="1653789582221" duration="338000" />
+      <workItem from="1653845612300" duration="44000" />
+      <workItem from="1653925523252" duration="31000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class CustomerSupport {
 
-    ArrayList<SupportTicket> tickets;
-    TicketOrderingStrategy processingStrategy;
+    private ArrayList<SupportTicket> tickets;
+    private TicketOrderingStrategy processingStrategy;
 
     CustomerSupport(TicketOrderingStrategy processingStrategy){
         tickets = new ArrayList<>();

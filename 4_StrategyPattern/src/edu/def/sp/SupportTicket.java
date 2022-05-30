@@ -32,7 +32,7 @@ public class SupportTicket {
      * @param ascii
      * @return
      */
-    protected String getSaltString(String ascii, int length) {
+    private String getSaltString(String ascii, int length) {
 
         //char sets based on the incoming argument
         String SALTCHARS;
