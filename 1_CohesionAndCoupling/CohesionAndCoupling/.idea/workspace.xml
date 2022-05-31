@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d483aeaf-a2ae-48d2-b526-c2087e3342cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/SolidPrinciples.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/Authorizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/AuthorizerGoogle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/AuthorizerRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/AuthorizerSMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/CreditPaymentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/DebitPaymentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/PaymentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/PaypalPaymentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/out/production/SolidPrinciples/edu/def/solid/Solid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/Authorizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/AuthorizerGoogle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/AuthorizerRobot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/AuthorizerSMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/CreditPaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/DebitPaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/PaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/PaypalPaymentProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/SolidPrinciples/src/edu/def/solid/Solid.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="29RX9vaFwD8sLgRxlOZz4cB2A2M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d483aeaf-a2ae-48d2-b526-c2087e3342cc" name="Changes" comment="" />
+      <created>1653076727761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653076727761</updated>
+      <workItem from="1653076729114" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
