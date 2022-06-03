@@ -14,7 +14,7 @@ I - Interface Segregation Principle
 D - Dependency Inversion Principle
 - You need to watch the [video](https://www.youtube.com/watch?v=pTB30aXS77U&feature=youtu.be) first, understand all principles, and then look at the translation codes in Java. This documentation will help you to understand the translation better.
 - This translation is based on the final code source of Solid Principles lessons in python programming languages (***dependency-inversion-after.py***)
-- We need a separate class with the ***main*** function to run the program, despite Python, which you can each ***.py*** file individually. ***Solid.java*** is the file with the main function for that purpose.
+- We need a separate class with the ***main*** function to run the program, despite Python, which you can each ***.py*** file individually. ***Main.java*** is the file with the main function for that purpose.
 - Standard naming on java is different. You can find more information [here](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html).
 
 ## **Directories changes** 
