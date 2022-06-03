@@ -14,9 +14,10 @@ As Java is a strong OOP language, we already have these definitions for it. We w
 
 ## **Directories changes** 
 
-This is one of the most significant changes we made to our translation. A **Java** project needs an exact directory with all dependencies to remain OOP and run smoothly. 
-We defined a package name for this project as ***edu.def.di*** ([package naming standards](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)) and its specific directory under the ***src*** folder. This package name keeps all project components connected to gather when we implement them on different ***.java*** files. 
-More information about **Java’s** project directory standards is [here](https://www.ibm.com/docs/en/i/7.1?topic=topics-java-classes-packages-directories).
+- This is one of the most significant changes we made to our translation. A **Java** project by an exact directory with all dependencies can be a good practce OOP designing. 
+- We defined a package name for this project as ***edu.def.di*** ([package naming standards](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)) and its specific directory under the ***src*** folder. This package name keeps all project components connected to gather when we implement them on different ***.java*** files.
+- However, packages are not necessary, you could use a default package, or even have all classes in the same file; this is more Java best practice.
+- More information about **Java’s** project directory standards is [here](https://www.ibm.com/docs/en/i/7.1?topic=topics-java-classes-packages-directories).
 
 ## **Implementational Instruction**
 
@@ -25,21 +26,24 @@ More information about **Java’s** project directory standards is [here](https:
 1. When we created other classes (***LightBulb.java***, ***Fan.java***, ***ElectricPowerSwitch.java***), we need ***Main.java*** to contain our main function to run the program.
 1. After that, we will start to translate all classes to their belonging files based on the ***P*ython** source. We will compare all of them with the original version in the following section.
 
+## **Comiling Instruction**
+
+- Run the command prompt inside the ***src*** folder.
+- Run the following command to compile all ***.java*** files:
+```
+javac edu/def/di/*.java
+```
+- To execute the program, we should run the ***Main.java*** file from the command prompt. To do this, from the same directory, run the following command on the command prompt:
+```
+java edu.def.di.Main
+```
+If your ***main*** function is in a different class, put the name of that class instead of ***Main*** at the end of the command
+- You can find more about compiling instruction [here](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html)
 
 ## **Classes changes** 
 
 ### ***Switchable***
 
-##### **Java version** 
-
-```java
-package edu.def.di;
-
-public interface Switchable {
-    void turnOn();
-    void turnOff();
-}
-```
 
 ##### **Python version** 
 
@@ -54,6 +58,17 @@ class Switchable(ABC):
         pass
 ```
 
+##### **Java version** 
+
+```java
+package edu.def.di;
+
+public interface Switchable {
+    void turnOn();
+    void turnOff();
+}
+```
+
 1. This class is the main lesson for this session, as we are talking about interface and ***Switchable*** is an interface class. As we can see, we implemented it with “***interface***” keyword and it just contains prototype of each method, without any implementation or parameter.
 1. As we don’t have interface in **python**, this class needs to inherit ***ABC*** class to act like an **abstract** class, although in **Java** we already have **abstract** and **interface** definitions locally. (in python version he used ***“@abstractmethod”*** keyword to show that they are abstract methods. Also, there are differences between **abstract** and **interface** which recommend [learning about them](https://stackoverflow.com/questions/1913098/what-is-the-difference-between-an-interface-and-abstract-class#:~:text=The%20key%20technical%20differences%20between,have%20constants%20and%20methods%20stubs.).)
 1. Its child classes will inherit all methods from it, and we will implement all methods at child classes under the ***“@Override”*** keyword.
@@ -61,6 +76,17 @@ class Switchable(ABC):
 
 
 ### ***LightBulb***
+
+##### **Python version** 
+
+```python
+class LightBulb(Switchable):
+    def turn_on(self):
+        print("LightBulb: turned on...")
+
+    def turn_off(self):
+        print("LightBulb: turned off...")
+```
 
 ##### **Java version** 
 
@@ -80,16 +106,6 @@ public class LightBulb implements Switchable{
 }
 ```
 
-##### **Python version** 
-
-```python
-class LightBulb(Switchable):
-    def turn_on(self):
-        print("LightBulb: turned on...")
-
-    def turn_off(self):
-        print("LightBulb: turned off...")
-```
 
 1. This is one of the ***Switchable*** children which is inheriting all methods from its parent class.
 1. “***Implements Switchable***” is the keyword for inheritance. 
@@ -97,6 +113,18 @@ class LightBulb(Switchable):
 1. Notice that in **python** version we simply use general inheritance implementation and redefine all methods without any keyword.
 
 ### ***Fan***
+
+
+##### **Python version** 
+
+```python
+class Fan(Switchable):
+    def turn_on(self):
+        print("Fan: turned on...")
+
+    def turn_off(self):
+        print("Fan: turned off...")
+```
 
 ##### **Java version** 
 
@@ -116,20 +144,27 @@ public class Fan implements Switchable{
 }
 ```
 
-##### **Python version** 
-
-```python
-class Fan(Switchable):
-    def turn_on(self):
-        print("Fan: turned on...")
-
-    def turn_off(self):
-        print("Fan: turned off...")
-```
-
 The same points as ***LightBulb*** class. 
 
 ### ***ElectricPowerSwitch***
+
+##### **Python version** 
+
+```python
+class ElectricPowerSwitch:
+
+    def __init__(self, c: Switchable):
+        self.client = c
+        self.on = False
+
+    def press(self):
+        if self.on:
+            self.client.turn_off()
+            self.on = False
+        else:
+            self.client.turn_on()
+            self.on = True
+```
 
 ##### **Java version** 
 
@@ -155,24 +190,6 @@ public class ElectricPowerSwitch {
         }
     }
 }
-```
-
-##### **Python version** 
-
-```python
-class ElectricPowerSwitch:
-
-    def __init__(self, c: Switchable):
-        self.client = c
-        self.on = False
-
-    def press(self):
-        if self.on:
-            self.client.turn_off()
-            self.on = False
-        else:
-            self.client.turn_on()
-            self.on = True
 ```
 
 1. This is a general class with specific functionality to act as an electric device. We will define the kind of device by passing related object to this class (this is an Aggregation relationship. More [here](https://www.scaler.com/topics/association-composition-and-aggregation-in-java/)). 

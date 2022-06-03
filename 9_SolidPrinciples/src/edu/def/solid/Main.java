@@ -1,6 +1,6 @@
 package edu.def.solid;
 
-public class Solid {
+public class Main {
 
     public static void main(String[] args) throws Exception {
         Order order = new Order(10);

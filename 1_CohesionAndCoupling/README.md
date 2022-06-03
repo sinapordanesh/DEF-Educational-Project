@@ -1,5 +1,4 @@
 ﻿# [Cohesion and Coupling](https://www.youtube.com/watch?v=eiDyK_ofPPM) **principles code translation in Java**
-
 *Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
 
 ## **Introduction** 
@@ -15,15 +14,49 @@ Benefits of Higher Cohesion:
 
 ## **Directories changes** 
 
-This is one of the most significant changes we made to our translation. A Java project needs an exact directory with all dependencies to remain OOP and run smoothly. 
+- This is one of the most significant changes we made to our translation. A **Java** project by an exact directory with all dependencies can be a good practce OOP designing. 
+- We defined a package name for this project as ***edu.def.cac*** ([package naming standards](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)) and its specific directory under the ***src*** folder. This package name keeps all project components connected to gather when we implement them on different ***.java*** files. 
+- However, packages are not necessary, you could use a default package, or even have all classes in the same file; this is more Java best practice.
+- More information about **Java’s** project directory standards is [here](https://www.ibm.com/docs/en/i/7.1?topic=topics-java-classes-packages-directories).
 
-We defined a package name for this project as ***edu.def.cac*** ([package naming standards](https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html)) and its specific directory under the ***src*** folder. This package name keeps all project components connected to gather when we implement them on different ***.java*** files. 
+## **Comiling Instruction**
 
-More information about Java’s project directory standards is [here](https://www.ibm.com/docs/en/i/7.1?topic=topics-java-classes-packages-directories).
+- Run the command prompt inside the ***src*** folder.
+- Run the following command to compile all ***.java*** files:
+```
+javac edu/def/cac/*.java
+```
+- To execute the program, we should run the ***Main.java*** file from the command prompt. To do this, from the same directory, run the following command on the command prompt:
+```
+java edu.def.cac.Main
+```
+If your ***main*** function is in a different class, put the name of that class instead of ***Main*** at the end of the command
+- You can find more about compiling instruction [here](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html)
 
 ## **Classes changes** 
 
 ### ***VehicleInfo***
+
+##### **Python version**
+
+```python
+class VehicleInfo:
+    
+    def __init__(self, brand, electric, catalogue_price):
+        self.brand = brand
+        self.electric = electric
+        self.catalogue_price = catalogue_price
+
+    def compute_tax(self):
+        tax_percentage = 0.05
+        if self.electric:
+            tax_percentage = 0.02
+        return tax_percentage * self.catalogue_price
+
+    def print(self):
+        print(f"Brand: {self.brand}")
+        print(f"Payable tax: {self.compute_tax()}")
+```
 
 ##### **Java version** 
 
@@ -67,32 +100,27 @@ public class VehicleInfo {
 }
 ```
 
-##### Python version
-
-```python
-class VehicleInfo:
-    
-    def __init__(self, brand, electric, catalogue_price):
-        self.brand = brand
-        self.electric = electric
-        self.catalogue_price = catalogue_price
-
-    def compute_tax(self):
-        tax_percentage = 0.05
-        if self.electric:
-            tax_percentage = 0.02
-        return tax_percentage * self.catalogue_price
-
-    def print(self):
-        print(f"Brand: {self.brand}")
-        print(f"Payable tax: {self.compute_tax()}")
-```
-
-1. we defined three private parameters in this class, and their values will be determined by the class instructor when we initialize the class. Each private parameter must have a **getter** and **setter** as an OOP principle. Still, as we won’t need direct access to any parameters in future, we do not implement them here (it’s acceptable). 
+1. we defined three private parameters in this class, and their values will be determined by the class instructor when we initialize the class. **getters** and **setters** for each **private** parameter, are not required, you can access fields directly by making parameters **public** in Java as well, but it's (private parameters) frequently done in Java as an OOP principle. Still, as we won’t need direct access to any parameters in future, we do not implement them here (it’s acceptable). 
 1. Be careful that we specify all data types when we initialize them, although it’s unnecessary for python. 
 1. We can add strings together for printing by the “***+***” sign, although we used formatted string to do that on python.
 
 ### ***Vehicle***
+
+##### **Python version**
+
+```python
+class Vehicle:
+
+    def __init__(self, id, license_plate, info):
+        self.id = id
+        self.license_plate = license_plate
+        self.info = info
+
+    def print(self):
+        print(f"Id: {self.id}")
+        print(f"License plate: {self.license_plate}")
+        self.info.print()
+```
 
 ##### **Java version** 
 
@@ -123,27 +151,39 @@ public class Vehicle {
 }
 ```
 
-##### Python version
-
-```python
-class Vehicle:
-
-    def __init__(self, id, license_plate, info):
-        self.id = id
-        self.license_plate = license_plate
-        self.info = info
-
-    def print(self):
-        print(f"Id: {self.id}")
-        print(f"License plate: {self.license_plate}")
-        self.info.print()
-```
 
 1. A simple class which has three parameters. As we explained in the previous class, we defined all of them as “*private*” without any getter and setter. 
 1. The same point about joining strings together for printing in the ***print*** function. 
 
 
 ### ***VehicleRegistry***
+
+##### **Python version**
+
+```python
+class VehicleRegistry:
+
+    def __init__(self):
+        self.vehicle_info = { }
+        self.add_vehicle_info("Tesla Model 3", True, 60000)
+        self.add_vehicle_info("Volkswagen ID3", True, 35000)
+        self.add_vehicle_info("BMW 5", False, 45000)
+        self.add_vehicle_info("Tesla Model Y", True, 75000)
+
+    def add_vehicle_info(self, brand, electric, catalogue_price):
+        self.vehicle_info[brand] = VehicleInfo(brand, electric, catalogue_price)
+
+    def generate_vehicle_id(self, length):
+        return ''.join(random.choices(string.ascii_uppercase, k=length))
+
+    def generate_vehicle_license(self, id):
+        return f"{id[:2]}-{''.join(random.choices(string.digits, k=2))}-{''.join(random.choices(string.ascii_uppercase, k=2))}"
+
+    def create_vehicle(self, brand):
+        id = self.generate_vehicle_id(12)
+        license_plate = self.generate_vehicle_license(id)
+        return Vehicle(id, license_plate, self.vehicle_info[brand])
+```
 
 ##### **Java version** 
 
@@ -226,33 +266,6 @@ public class VehicleRegistry {
 }
 ```
 
-##### Python version
-
-```python
-class VehicleRegistry:
-
-    def __init__(self):
-        self.vehicle_info = { }
-        self.add_vehicle_info("Tesla Model 3", True, 60000)
-        self.add_vehicle_info("Volkswagen ID3", True, 35000)
-        self.add_vehicle_info("BMW 5", False, 45000)
-        self.add_vehicle_info("Tesla Model Y", True, 75000)
-
-    def add_vehicle_info(self, brand, electric, catalogue_price):
-        self.vehicle_info[brand] = VehicleInfo(brand, electric, catalogue_price)
-
-    def generate_vehicle_id(self, length):
-        return ''.join(random.choices(string.ascii_uppercase, k=length))
-
-    def generate_vehicle_license(self, id):
-        return f"{id[:2]}-{''.join(random.choices(string.digits, k=2))}-{''.join(random.choices(string.ascii_uppercase, k=2))}"
-
-    def create_vehicle(self, brand):
-        id = self.generate_vehicle_id(12)
-        license_plate = self.generate_vehicle_license(id)
-        return Vehicle(id, license_plate, self.vehicle_info[brand])
-```
-
 1. In this class, we are using ***vehicleInfo*** [HashMap](https://www.w3schools.com/java/java_hashmap.asp) as an alternative data structure for [Python’s dictionary](https://www.w3schools.com/python/python_dictionaries.asp). [HashMap](https://www.w3schools.com/java/java_hashmap.asp) is a data structure which allows us to define a key for a specific value and get access to that value with the key in future (*key -> value*). In this class, we use a car’s brand as a key and attach it to belonging vehicle information (value). As a result, we will be able to access each car’s brand information through *key -> value*. In addition, this parameter is a private one.
 1. `  `We initialized ***vehicleInfo*** with some data at the class construction ***VehicleRegistry**.* This isn’t a good and professional way to saturate a hash map, but it works in this example just for educational purposes. 
 1. The function ***addVehicleInfo*** is for adding new data to the ***vehicleInfo*** [HashMap](https://www.w3schools.com/java/java_hashmap.asp) by getting three arguments. The first argument will be the key on the [HashMap](https://www.w3schools.com/java/java_hashmap.asp), and the others will be used to initialize an object from VehicleInfo class.  As you can see, ***vehicleInfo.put(key, value)*** is a function to add an entry to the HashMap. 
@@ -263,6 +276,21 @@ In this function, we need to return a random string of uppercase characters with
 1. As we said before, ***getSaltString*** is a [helper method](https://teamtreehouse.com/community/what-exactly-is-a-helper-method) to generate random strings based on specific size and type. You can find more [here](https://stackoverflow.com/questions/20536566/creating-a-random-string-with-a-z-and-0-9-in-java).
 
 ### ***Application*** 
+
+##### **Python version**
+
+```python
+class Application:
+
+    def register_vehicle(self, brand: string):
+        # create a registry instance
+        registry = VehicleRegistry()
+
+        vehicle = registry.create_vehicle(brand)
+
+        # print out the vehicle information
+        vehicle.print()
+```
 
 ##### **Java version** 
 
@@ -282,19 +310,5 @@ public class Application {
 }
 ```
 
-##### Python version
-
-```python
-class Application:
-
-    def register_vehicle(self, brand: string):
-        # create a registry instance
-        registry = VehicleRegistry()
-
-        vehicle = registry.create_vehicle(brand)
-
-        # print out the vehicle information
-        vehicle.print()
-```
 
 1. This class, with a simple public function, is created to put all other classes and their method together to lunch an application. The only argument that the ***registerVehicle*** method needs is a car’s brand string.
