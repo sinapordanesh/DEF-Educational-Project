@@ -1,5 +1,6 @@
 ﻿
-# [**Template Method & Bridge](https://www.youtube.com/watch?v=t0mCrXHsLbI) **code translation in Java** 
+# [Template Method & Bridge](https://www.youtube.com/watch?v=t0mCrXHsLbI) **code translation in Java** 
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
 
 ## **General Introduction** 
 
