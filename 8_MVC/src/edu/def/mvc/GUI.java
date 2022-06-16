@@ -1,3 +1,10 @@
+/**
+ @author Saman Pordanesh <a href="mailto:sina.pordanesh@yahoo.com">
+ sina.pordanesh@yahoo.com</a>
+ @version 1.0
+ @since 1.0
+ */
+
 package edu.def.mvc;
 
 import javax.swing.*;
@@ -7,6 +14,11 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.UUID;
 
+
+/**
+ * this class handles all three MVC classes to generate an UI application.
+ * It uses AWT library for generating GUI.
+ */
 public class GUI implements View {
 
     private Controller controller;
@@ -18,6 +30,8 @@ public class GUI implements View {
     @Override
     public void setup(Controller controller) {
 
+        // A controller object to control all principles in the program
+        // from a unique class.
         this.controller = controller;
 
         JFrame frame = new JFrame();
@@ -49,6 +63,10 @@ public class GUI implements View {
         frame.setVisible(true);
     }
 
+    /**
+     * Starting a GUI list for holding all generated UUIDs.
+     * Presents all generated UUIDs which Model class has.
+     */
     @Override
     public void list() {
         this.textArea = new TextArea(5, 20);
@@ -59,8 +77,16 @@ public class GUI implements View {
         }
     }
 
+    /**
+     * Generating a button view and its related functionality.
+     * @return: return a button object.
+     */
     @Override
     public JButton appendToList() {
+        /**
+         * this class is defining a specific behaviour for a button.
+         * A button can link to this class
+         */
         class event1 implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -77,8 +103,18 @@ public class GUI implements View {
         return generateButton;
     }
 
+    /**
+     * Generating a button view and its related functionality.
+     * @return: return a button object.
+     */
     @Override
     public JButton clearList() {
+        /**
+         * this class is defining a specific behaviour for a button.
+         * A button can link to this class.
+         * The point is that it should inherit ActionListener interface to
+         * handle on click action.
+         */
         class event2 implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -90,11 +126,6 @@ public class GUI implements View {
         event2 e2 = new event2();
         clearButton.addActionListener(e2);
         return clearButton;
-    }
-
-    @Override
-    public void startMainLoop() {
-
     }
 
 }
