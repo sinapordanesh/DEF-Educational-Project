@@ -10,9 +10,9 @@ package edu.def.mvc;
 import javax.swing.*;
 import java.util.UUID;
 
-public interface View {
-    public void setup(Controller controller);
-    public void list();
-    public JButton appendToList();
-    public JButton clearList();
+public abstract class View {
+    public abstract void setup(Controller controller);
+    public abstract void appendToList(UUID item);
+    public abstract void clearList();
+    public abstract void  startMainLoop();
 }

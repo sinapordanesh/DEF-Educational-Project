@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller(
                 new Model(),
-                new GUI(),
+                new SwingView(),
                 new Uuid4()
                 );
         controller.start();

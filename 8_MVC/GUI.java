@@ -19,10 +19,18 @@ import java.util.UUID;
  * this class handles all three MVC classes to generate an UI application.
  * It uses AWT library for generating GUI.
  */
+
+
 public class GUI implements View {
 
-    private Controller controller;
+//    private Controller controller;
     private TextArea textArea;
+
+    JFrame frame;
+    JTextArea display;
+    JButton createButton;
+    JButton clearButton;
+    Controller controller;
 
     public GUI() {
     }
@@ -34,7 +42,9 @@ public class GUI implements View {
         // from a unique class.
         this.controller = controller;
 
-        JFrame frame = new JFrame();
+
+        this.frame = new JFrame();
+        this.display = new JTextArea("", 20, 80);
 
         // Create two button for generating uuid and append to the list (generateButton)
         // and clear the least (clearButton)
