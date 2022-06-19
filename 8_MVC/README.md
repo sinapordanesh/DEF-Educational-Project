@@ -1,5 +1,8 @@
 ﻿# [MVC (Model-View-Controller)](https://www.youtube.com/watch?v=ihtIcGkTFBU) **code translation in Java** 
 
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
+
+
 ## **General Introduction** 
 
 - [MVC (Model-View-Controller)](https://developer.mozilla.org/en-US/docs/Glossary/MVC) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes the separation between the software's business logic and display. For more, click [here](https://developer.mozilla.org/en-US/docs/Glossary/MVC).

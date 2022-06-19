@@ -1,6 +1,9 @@
 ﻿
 # [The Strategy Pattern](https://www.youtube.com/watch?v=WQ8bNdxREHU) **code translation in Java** 
 
+*Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
+
+
 ## **General Introduction** 
 
 - [**Strategy**](https://refactoring.guru/design-patterns/strategy) is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
