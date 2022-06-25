@@ -1,12 +1,4 @@
-﻿---
-toc: true
-layout: post
-description: Cmpletete traslation of Python code to Java.
-categories: [Python, Java, OOP]
-title: SOLID principles in Java
-author: <a href="https://github.com/sinapordanesh”>Saman Pordanesh</a>
----
-
+﻿
 # [Object Pool](https://www.youtube.com/watch?v=Rm4JP7JfsKY&t=407s) **code translation in Java**
  **General Introduction** 
 
