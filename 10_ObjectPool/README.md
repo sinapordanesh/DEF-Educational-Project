@@ -1,6 +1,5 @@
 ﻿
 # [Object Pool](https://www.youtube.com/watch?v=Rm4JP7JfsKY&t=407s) **code translation in Java**
- **General Introduction** 
 
 *Published by* [Saman Pordanesh](https://github.com/sinapordanesh)
 
