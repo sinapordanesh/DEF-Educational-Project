@@ -12,3 +12,4 @@ We recommend starting with lesson 9, after that 1, 2, 3, 6, 8, 10.
 - Lessons 4, 5 and 7 were missed as we recognized their translations wouldn’t have any point in terms of Java designing, but we highly recommend watching them and understanding all points and rules.  
 
 You can find original Python code repository [here](https://github.com/arjancodes/betterpython)
+In addition, you can find the project blog post [here](https://de-fellows.github.io/RexCoding/)
